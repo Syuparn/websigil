@@ -6,6 +6,13 @@ defmodule Websigil.MixProject do
       app: :websigil,
       version: "0.1.0",
       elixir: "~> 1.14",
+      name: "WebSigil",
+      description: "A custom sigil that gets HTTP response from URL string",
+      package: [
+        maintainers: ["syuparn"],
+        licenses: ["MIT"],
+        links: %{"GitHub" => "https://github.com/Syuparn/websigil"}
+      ],
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
